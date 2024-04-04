@@ -1,0 +1,221 @@
+元素
+p{
+    color:red;
+    font-size:30px;
+}
+全局
+* {
+    color: red;
+    font-size: 30px;
+}
+
+.content {
+    color: blue;
+    font-size: 30px;
+}
+
+#text {
+    color: blue;
+    color:#1fd939;
+    color:rgb(51, 196, 70);
+    color:rgba(199, 57, 57,0.5);
+
+
+    font-weight:bold;
+    font-weight:lighter;
+    font-weight:400;
+    font-style:italic;
+    font-family:"微软雅黑";/*字体*/
+    font-size: 30px;
+
+    text-align:left;
+    text-decoration:underline;
+    text-transform:capitalize;
+    text-indent:50px;
+
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+
+    background-color: aquamarine;
+    background-image: url("images/picture1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:left top;
+
+    padding:50px 10px;/*内边距*/
+    border:5px solid red;/*边框*/
+    margin:10px 10px;/*外边距*//*一二值分别表示上下左右*/ /*使用auto时平均分配*/
+
+    display:flex;/*弹性盒子：对区块内子级元素操作*/
+    flex-direction:row-reverse;/*控制方向*/
+    justify-content:flex-start;/*主轴线上的位置*/
+    align-content:center;/*横向位置*/
+
+    overflow:hidden;/*清除浮动操作，当不能定义高度并且子级为浮动时使用防止坍塌*/
+
+    border-radius:100px;/*设置图片圆角*//*可以100%*//*两个值表示左上右下，和右上左下*/
+
+    box-shadow:10px 10px 30px rgb(34, 197, 204);/*水平，垂直，模糊度，颜色*/
+}
+
+.box1 {
+    width: 40px;
+    height: 40px;
+    background-color:rgb(225, 28, 28);
+
+    flex:1;/*占得比例*/
+}
+.box2 {
+    width: 40px;
+    height: 40px;
+    background-color:rgb(22, 202, 114);
+
+    flex:2;
+}
+.box3 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(22, 202, 114);
+
+    float:left ;/*浮动，相当于在另一层级*/
+}
+.box4 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(225, 28, 28);
+
+    clear:both;/*清除浮动*/
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color:aqua;
+
+    position:relative;/*相对定位*/
+    left:100px;
+    top:100px;
+}
+.box6 {
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue ;
+
+    position: absolute; /*绝对定位,相比于相对定位，他脱离了文档流，并且每设置一个增加一层*/
+    left: 200px;
+    top: 100px;
+}
+.box7 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+
+    position:fixed; /*固定定位,页面滚动时位置不变*/
+    right: 100px;
+    bottom: 100px;
+}
+
+.box9 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(225, 28, 28);
+}
+#table1,.td1{
+    border:1px solid green;
+
+    border-collapse:collapse;
+
+    width:500px;
+    height:;
+
+    text-align:center; 
+    vertical-align: central;
+    padding: 50px;
+
+    background-color:aqua;
+    color:#2e44e1;
+}
+
+@keyframes name{
+    0%{
+        background-color:aqua;
+    }
+    50%{
+        background-color:blue;
+    }
+    100%{
+        background-color:aqua;
+    }
+}
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+
+    animation: name 3s linear 0s 2; /*name duration timing-fuction delay iteration-count(infinite) direction(默认正向) animation-play-state*/ 
+}
+.box8:hover{
+    animation-play-state:paused;/*鼠标一上去暂停*/
+}
+
+
+/*在不同屏幕下的显示*/
+@media screen and (max-width:768px) {
+    .box9{
+      background-color :antiquewhite ;
+    }
+}
+
+@media screen and (min-width:768px)  and (max-width:996px) {
+    .box9 {
+        background-color: aquamarine;
+    }
+}
+@media screen and (min-width:996px)  {
+    .box9 {
+        background-color:black ;
+    }
+}
+
+.slide{
+    width:234px;
+    height:420px;
+    background-color:rgba(105,101,101,0.6);
+    padding:20px 0px;
+    margin:100px;
+    position:relative;
+}
+.slide ul {
+        list-style: none;
+        padding:0;
+}
+.slide ul li {
+        width: 121%;
+        height: 42px;
+        line-height: 42px;
+        padding-left: 30px;
+        box-sizing: border-box;
+}
+.slide ul li:hover{
+    background-color:#ff6700;
+}  
+.slide ul li a {
+     display: block;
+     text-decoration: none;
+     color: aliceblue;
+}
+.slide-list {
+    width: 992px;
+    height: 460px;
+    background-color: rgb(149, 231, 154);
+    position: absolute; /*绝对定位,相比于相对定位，他脱离了文档流，并且每设置一个增加一层*/
+    left: 234px;
+    top: 0px;
+    display:none;
+}
+.slide ul li:hover > .slide-list {
+    display:block;
+}

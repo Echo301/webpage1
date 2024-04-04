@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=devic-width,initial-scale=1.0">
+		<title>我的第一个网页</title>
+		<link rel="stylesheet" href="./public.css"/>
+		<style>
+			h1{
+				color:blueviolet;
+				font-size:30px	}
+		</style>
+</head>
+       上style里面的是 css的内部样式，可在同一文件内同时改变，但不能改变其他文件
+       link为外部样式，在css文件该，包含了就能改
+
+<body>
+
+    <p><br></p>
+    <h1 align="center">欢迎来到我的网页！</h1>
+
+
+    <p>段落标签</p>
+    <p>换行操作<br>加br</p>
+    <p>水平线<hr color="red" width="300px" size="20px" align="center"></p>
+
+
+    <img src="images/picture1.jpg" alt="Apex" width="300" height="" title="Apex" />
+
+    <p><br></p>
+
+    <a href="https://search.bilibili.com/all?keyword=apex%E8%8B%B1%E9%9B%84&search_source=1">点击跳转</a>
+
+    <p><br></p>
+
+    <em>em文本标签</em>
+    <i>i文本标签</i>
+    <b>b文本标签</b>
+    <strong>strong文本标签</strong>
+    <span>span文本标签</span>
+    <del>del文本标签</del>
+
+    <p><br></p>
+
+    <ol type="a">
+        <li>有序标签</li>
+        <li>有序标签</li>
+        <li>type有1,a,A,i,I五种类型</li>
+    </ol>
+
+    <p><br></p>
+
+    <ul type="square">
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>type有dic，circlr，square，none四种类型</li>
+    </ul>
+
+    <p><br></p>
+
+    <table border="2" width="40" height="40">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <p><br></p>
+
+    <p>colspan和rowspan是扩展，把对应的格子删除，就相当于合并</p>
+    <table id="table1">
+        <tr>
+            <td class="td1" colspan="2">12</td>
+        </tr>
+        <tr>
+            <td class="td1" rowspan="2">35</td>
+            <td class="td1">4</td>
+        </tr>
+        <tr>
+            <td class="td1">6</td>
+        </tr>
+    </table>
+
+    <p><br></p>
+
+    <p>actiom为服务器地址,method数据提交方式（get和post），name为表单名</p>
+    <form action="url" method="get" name="MyForm">
+        用户名：<input type="text" />
+        密码：<input type="password" />
+        <input type="submit" value="登录" />
+    </form>
+
+    <p><br></p>
+
+    <p>div是容器，将不同的内容整合成模块</p>
+    <div id="header"></div>
+    <div id="nav"></div>
+    <div id="aside"></div>
+    <div id="article">
+        <div id="section"></div>
+    </div>
+    <div id="footer"></div>
+
+    <p>新版一般应用下面的,需要新浏览器识别</p>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <article>
+        <section></section>
+    </article>
+    <footer></footer>
+
+    <p><br></p>
+
+    <p style="color:aquamarine">内联样式css,不利于维护</p>
+
+    <p><br></p>
+
+    <a href="./Heart.html">跳转至第二页</a>
+
+    <p><br></p>
+
+    <p>类选择器：.</p>
+    <p class="content">我很好</p>
+    <p>id选择器：#,id不能重复</p>
+    <p id="text">id选择器</p>
+
+    <p><br></p>
+
+    <div class="box">
+        <p style="color:red">背景设置</p>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <p><br></p>
+
+    <p>关系选择器</p>
+    <p>后代选择器 (E F{}) 选择的是E标签下的所有F标签</p>
+    <p>子代选择器 (E>F{}) 选择的是E标签下的子代F标签</p>
+    <p>相邻兄弟选择器 (E+F) 选择的是与E标签向下最相邻的F标签</p>
+    <p>通用兄弟选择器 (E~F) 选择的是E标签后的所有F标签</p>
+
+    <p><br></p>
+
+    <p>脱离标准流带来的不便</p>
+    <p>浮动：只向左右</p>
+    <div class="box">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <p><br></p>
+
+    <p>定位</p>
+    <p>相对定位</p>
+    <div class="box5"></div>
+    <p>绝对定位</p>
+    <div class="box6"></div>
+    <p>固定定位</p>
+    <div class="box7"></div>
+
+    <p><br></p>
+
+    <p>animation 动画执行</p>
+    <p>name  duration  timing-fuction  delay  iteration-count  direction  animation-play-state</p>
+    <div class="box8"></div>
+
+    <p><br></p>
+
+    <div class="box9"></div>
+
+    <p><br></p>
+
+    <p>字体图标得到阿里字体图标库获取，获取后有教程</p>
+
+    <p><br></p>
+
+    <p>滑动门</p>
+    <div class="slide">
+        <ul>
+            <li>
+                <a href="#">手机</a>
+                <div class="slide-list">小米1</div>
+            </li>
+            <li>
+                <a href="#">电视</a>
+                <div class="slide-list">小米2</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
